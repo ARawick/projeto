@@ -1,0 +1,448 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+ul {
+    padding: 15px;
+    list-style: none
+    
+    
+}    
+
+
+
+ul.ull {
+    background-color: rgb(253, 132, 20);
+    display: flex;
+    gap: 1.8999999999999986rem;
+    
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+header {
+    height: calc(100vh - 150px);
+    background: no-repeat center/cover url('igreja.jpg');
+}
+
+
+
+ nav {
+    display: flex;
+    justify-content: space-between;
+    color: #e7e7e7;
+    background-color: orange;
+    
+}
+
+ header p {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5em;
+    transition: text-shadow .4s;
+    color: #e7e7e7;
+}
+
+ header p:hover {
+    text-shadow: 0px 0px 10px rgba(248, 52, 52, 0.889);
+}
+
+
+ nav ul {
+    list-style: none;
+    display: flex;
+    color: #ffffff;
+    
+    
+}
+
+ nav ul li {
+    margin: 0 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline;
+    
+    
+}
+
+ nav ul li:hover {
+    color: #c2bdbd;
+    transition: .4s;
+    
+}
+
+.div-pesquisar{
+    padding:10px ;
+    height: 50px;
+    border-radius: 30px;
+    margin: 20px;
+
+
+}
+
+
+.header-content {
+    color: #fff;
+    font-weight: bold;
+    max-width: 400px;
+    margin: 150px auto;
+    text-align: center;
+    animation: ease text-move 2s forwards;
+    background-color: #073da108;
+}
+
+
+.header-content h1 {
+    margin-bottom: 10px;
+    font-size: 4rem;
+}
+
+
+
+button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    border: 0;
+    cursor: pointer;
+    background-color: rgb(248, 124, 7);
+    color: #fff;
+}
+
+/* PACOTES */
+
+.pacotes {
+    background-color: rgba(235, 231, 231, 0.363);
+    padding: 25px;
+}
+
+.pacotes-cards {
+    /* background: #333; */
+    margin: auto;
+    max-width: 950px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: black;
+
+}
+
+.pacotes-title {
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+}
+
+
+.card {
+    margin: 25px;
+    width: 250px;
+    height: 350px;
+    background: #fff;
+    
+    box-shadow: 0px 0px 4px -1px #222;
+    position: relative;
+    transition: all 1s;
+}
+
+.card:hover {
+    
+    transform: scale(1.1);
+}
+
+
+.card-image {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 0 15px;
+}
+
+.card-content h1 {
+    font-size: 0.9rem;
+}
+
+.card-content ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0;
+}
+
+.card-content ul li {
+    font-size: 0.6rem;
+    display: flex;
+    align-items: center;
+    margin: 3px 0px;
+    color: rgba(30, 0, 255, 0.742);
+    font-weight: bold;
+}
+
+.card-content li svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.card-tag-top {
+    position: absolute;
+    background: #f56c11;
+    right: 0;
+    top: 15px;
+    border-radius: 8px 0 0 8px;
+    padding: 5px 10px;
+    box-shadow: 1px 2px 5px -2px #222;
+}
+
+
+.card-tag-bottom {
+    position: absolute;
+    left: 0;
+    top: 160px;
+    background: #1d61dd;
+    border-radius: 0 8px 8px 0;
+    padding: 5px 10px;
+    box-shadow: 1px 1px 4px 1px #222;
+}
+
+/* Botões de preço */
+
+.card-tag p {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #ffff;
+}
+
+/* SERVIÇOS */
+
+.servicos {
+    padding: 15px;
+}
+
+.servicos-title {
+    text-align: center;
+    margin: 25px;
+}
+
+.servicos-cards {
+    display: flex;
+    padding: 35px 0;
+    max-width: 950px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.servicos .card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.card svg {
+    width: 60px;
+    height: 60px;
+    margin: 50px 0;
+    transition: all 1s;
+}
+
+svg:hover {
+    color: #f56c11;
+    transform: scale(1.1);
+}
+
+.card h3 {
+    font-weight: bold;
+}
+
+.servicos .card p {
+    color: gray;
+    font-size: .8rem;
+    text-align: center;
+}
+
+.servicos .card .card-content {
+    height: 100px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+#map {
+
+    width: 100%;
+
+}
+
+.contato {
+    /* padding: 60px; */
+
+    position: relative;
+    display: block;
+
+
+
+}
+
+.contato-card {
+    width: 350px;
+    height: 330px;
+    padding: 0 50px;
+    background: #fff;
+    z-index: 99;
+
+
+    border-radius: 8px;
+
+    top: calc(50% - 150px);
+    left: calc(20% - 170px);
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+
+
+
+
+.contato-card h1 {
+    padding-right: 58px;
+}
+
+.contato-card li {
+    font-size: .8rem;
+    font-weight: bold;
+    color: black;
+
+    display: flex;
+    align-items: center;
+}
+
+.contato-card li svg {
+    width: 16px;
+    margin: 10px;
+}
+
+/* RESPONSIVIDADE */
+
+
+.contato-card {
+    left: 40px;
+}
+
+
+    header nav ul {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        z-index: 100;
+
+        background: #073da1;
+        color: #fff;
+        font-weight: bold;
+        height: 55px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header nav p {
+        width: 100%;
+        text-align: center;
+    }
+
+
+
+footer {
+    padding: 10px;
+    color: black;
+    background-color: rgb(255, 128, 0);
+    clear: left;
+    text-align: center;
+}
+
+.coress {
+    color: black;
+    font-family: monospace;
+
+}
+
+form {
+    width:350px;
+    max-width: 300px;
+    flex-direction: column;
+    border: 10px solid rgba(4, 252, 252, 0.771);
+    padding: 40px;
+    margin: 0 auto;
+    border-radius: 15px;
+    
+    
+  }
+  
+  input[type=text]{
+    margin-bottom:25px;
+    border:2px solid #35edf3;
+    border-radius: 20px;
+    width: 220px;
+    padding: 5px;
+    
+    
+  }
+
+
+  input[type=submit]{
+    width:60px;
+    height:30px;
+    transition: 1s all;
+    
+    
+  }
+
+  
+    input[type=password]{
+    margin-bottom:23px;
+    border:2px solid #51d7ef;
+    border-radius: 20px;
+    width: 220px;
+    padding: 5px;
+
+    }
+
+   
+
+    .formss{
+        justify-content: center;
+        text-align: center;
+
+    }
+
+
+   
